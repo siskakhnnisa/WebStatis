@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Berat Badan Ideal</title>
+	<style type="text/css">
+		body{
+			background-image: url(gambar/back.png);
+		}
+		.container{
+			width: 800px;
+			margin: auto;
+			padding: 25px;
+			padding-top: 10px;
+			background-color: #c2f0f9;
+			margin-top: 40px;
+			border-radius: 15px;
+		
+		}.container input{
+			display: block;
+		}
+		.tombol table{
+			margin: auto;
+
+		}.bagian2 input{
+			width: 100%;
+			padding: 10px 18px;
+			margin: 7px 0;
+			margin-bottom: -20px;
+			display: inline-block;
+			box-sizing: border-box;
+		}.bagian1 input{
+			 width: 100%;
+			 padding: 10px 18px;
+			 margin: 7px 0;
+			 margin-bottom: -20px;
+			 display: inline-block;
+			 box-sizing: border-box;
+		}
+		.tombol input[type=submit],input[type=reset] {
+		    font-family: sans-serif;
+		    font-size: 15px;
+		    background: #22a4cf;
+		    color: white;
+		    border: white 3px solid;
+		    border-radius: 10px;
+		    padding: 8px 16px;
+		    margin-top: 10px;
+		    cursor: pointer;
+		}
+		.tombol input[type=submit]:hover ,input[type=reset]:hover{
+			background-color: lightskyblue;
+			color: coral;
+		}
+		#bmi{
+			text-align: center;
+			font-size: 20px;
+			font-family: "Oswald";
+		}
+		#hasil{
+			text-align: center;
+			font-family: "Oswald";
+			font-size: 22px;
+			color: #674d3c;
+		}
+		#keterangan{
+			text-align: center;
+			font-size: 25px;
+			font-family: "Oswald";
+			
+		}
+		#penjelasan{
+			text-align: justify;
+			font-family: "Oswald";
+		}
+		.teks{
+			padding-top: 50px;
+		}
+		.pre{
+			width: 800px;
+			margin: auto;
+			padding: 25px;
+			padding-top: 100px;
+			margin-top: 50px;
+			background-color: white;
+			background-image: url(gambar/back.png);
+			border: solid rgb(77, 107, 206);
+			border-width: 1px;
+			border-radius: 15px;
+			padding-bottom: 50px;
+			margin-bottom: 100px;
+		}
+		.bmi-teks{
+			text-align: justify;
+			padding-top: 50px;
+		}
+		h2{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<h2>Kalkulator BMI (Indeks Massa Tubuh)</h2>
+	<div class="container">
+		<center><h1>Kalkulator BMI</h1></center>		
+		<div class="tengah">
+			<h3>Menghitung Program BMI</h3>
+			<div class="bagian1">
+				<label>Tinggi Badan (cm)</label>
+				<input type="number"  id="height" placeholder="Masukkan Tinggi Badan">
+				<p id="notif1" style="color: grey;"></p>
+			</div>
+			<br>
+			<div class="bagian2">
+				<label>Berat Badan (kg)</label>
+				<input type="number"  id="weight" placeholder="Masukkan Berat Badan">
+				<p id="notif2" style="color: grey;"></p>
+			</div>
+			<br>
+		</div>
+		<div class="tombol">
+			<table cellspacing="0" cellpadding="20">
+				<tr>
+					<td class="bagian3"><input type="submit" onclick="hitung()" value="Hitung" width="500px"></td>
+					<td class="bagian4"><input type="reset" onclick="hapus()" value="Ulangi"></td>
+				</tr>
+				
+			</table>
+		</div>		
+		<div class="teks">
+		<h4 id="bmi"></h4>
+		<h3 id="hasil"></h3>
+		<h5 id="keterangan"></h5>
+		<p id="penjelasan"></p>
+		</div>
+	</div>
+	<div class="pre">
+		<div class="foto">
+		<img src="bmi_photo.png"  style="display:block; margin:auto;">
+		</div>
+		<div class="bmi-teks">
+		<p><i>Body mass index (BMI)</i> atau indeks massa tubuh (IMT) adalah parameter yang digunakan untuk menghitung berat badan seseorang. Melalui perhitungan ini, akan diketahui apakah berat badan Anda tergolong normal, kurang, atau berlebih. Perlu diingat bahwa berat badan ideal setiap orang berbeda-beda. Oleh karena itu, cara untuk tahu apakah berat badan tergolong ideal atau tidak yaitu dengan mengetahu IMT atau BMI. Selain berat badan, Anda juga harus mengetahui tinggi badan yang merupakan salah satu komponen pengukurannya. Cara menghitung indeks massa tubuh yang praktis dan mudah salah satunya bisa menggunakan kalkulator BMI online. Anda bisa menggunakan fitur ini di manapun dan kapan pun. Perlu menjadi catatan bahwa BMI bukanlah pengukuran yang akurat karena tidak bisa menjelaskan secara detail mengenai masalah berat badan seseorang. Hasil perhitungan BMI juga tidak dapat memperhitungkan lemak dalam tubuh untuk mengukur risiko penyakit kronis. Di sisi lain, Anda Anda dapat mengetahui informasi dasar mengenai masalah berat badan secara keseluruhan. Angka BMI bisa menjadi peringatan bagi Anda untuk menjaga berat badan normal agar hidup lebih sehat. 
+		<ul><h3>Cara menggunakan Kalkulator BMI UniHealth : </h3>
+			<li>Masukkan tinggi badan Anda (dalam satuan cm)</li>
+			<li>Masukkan berat badan Anda (dalam satuan kg)</li> 
+			<li>Klik “Hitung!”</li>
+			<li>Hasil perhitungan BMI Anda akan muncul</li>
+		</ul>
+	Hasil perhitungan BMI akan disesuaikan dengan tinggi badan dan berat badan yang Anda masukkan ke dalam kalkulator. Selanjutnya, Anda bisa mengetahui apakah Anda tergolong kurus, ideal, gemuk, atau obesitas.</p>
+	</div>
+
+	</div>
+<script type="text/javascript">
+	var tinggi; berat; keterangan;bmi;
+	function hitung(){
+		tinggi = parseFloat(document.getElementById("height").value);
+		tinggi = tinggi / 100
+		berat = parseFloat(document.getElementById("weight").value);
+		bmi = berat/(tinggi*tinggi);
+		if (bmi >= 30){
+			keterangan = "Obesitas";
+			penjelasan = "Hasil perhitungan menunjukkan bahwa Anda memiliki berat badan berlebih atau gemuk. Hasil ini berdasarkan angka BMI Anda yang ada di antara angka 25 sampai 29.9. Sebagai solusinya, Anda harus mengurangi asupan asupan kalori harian sekitar 300-500 kkal. Mulai sekarang coba lebih perhatikan kalori dari makanan dan minuman yang Anda konsumsi. Mengurangi asupan kalori harian sekitar 500 kkal dapat membantu menurunkan berat badan sebesar 0,5-1 kg per minggu. Bukan hanya mengurangi asupan kalori, penurunan berat badan bisa tercapai dengan rutin berolahraga. Perlu diingat bahwa jangan konsumsi kalori di bawah 1.200 kkal per hari karena bisa berdampak buruk pada kesehatan. Hasil perhitungan menunjukkan bahwa Anda tergolong obesitas. Hasil ini berdasarkan angka BMI Anda lebih dari 30. Perlu diketahui bahwa obesitas lebih parah daripada gemuk. Seseorang yang gemuk belum tentu obesitas, sedangkan seseorang yang obesitas sudah dipastikan gemuk. Jika dibiarkan, bisa berisiko menderita berbagai penyakit serius. Cara menurunkan berat badan yaitu dengan mengurangi asupan kalori harian sekitar 300-500 kkal. Cara ini dapat membantu menurunkan berat badan sebesar 0,5-1 kg per minggu. Mengurangi asupan kalori saja tidak cukup. Anda perlu melakukan olahraga rutin untuk mendapatkan berat badan ideal."
+			document.getElementById("bmi").innerHTML = "Hasil Perhitungan BMI"
+			document.getElementById("keterangan").style.color = '#d64161';
+		}else if((bmi >= 25) && (bmi <= 29.9)){
+			keterangan = "Berlebih";
+			penjelasan = "Hasil perhitungan menunjukkan bahwa Anda memiliki berat badan berlebih atau gemuk. Hasil ini berdasarkan angka BMI Anda yang ada di antara angka 25 sampai 29.9. Sebagai solusinya, Anda harus mengurangi asupan asupan kalori harian sekitar 300-500 kkal. Mulai sekarang coba lebih perhatikan kalori dari makanan dan minuman yang Anda konsumsi. Mengurangi asupan kalori harian sekitar 500 kkal dapat membantu menurunkan berat badan sebesar 0,5-1 kg per minggu. Bukan hanya mengurangi asupan kalori, penurunan berat badan bisa tercapai dengan rutin berolahraga. Perlu diingat bahwa jangan konsumsi kalori di bawah 1.200 kkal per hari karena bisa berdampak buruk pada kesehatan. Hasil perhitungan menunjukkan bahwa Anda tergolong obesitas. Hasil ini berdasarkan angka BMI Anda lebih dari 30. Perlu diketahui bahwa obesitas lebih parah daripada gemuk. Seseorang yang gemuk belum tentu obesitas, sedangkan seseorang yang obesitas sudah dipastikan gemuk. Jika dibiarkan, bisa berisiko menderita berbagai penyakit serius. Cara menurunkan berat badan yaitu dengan mengurangi asupan kalori harian sekitar 300-500 kkal. Cara ini dapat membantu menurunkan berat badan sebesar 0,5-1 kg per minggu. Mengurangi asupan kalori saja tidak cukup. Anda perlu melakukan olahraga rutin untuk mendapatkan berat badan ideal."
+			document.getElementById("bmi").innerHTML = "Hasil Perhitungan BMI";
+			document.getElementById("keterangan").style.color = '#ff6f69';
+		}else if((bmi >= 18.5) && (bmi <= 24.9)){
+			keterangan = "Normal";
+			penjelasan = "Hasil perhitungan menunjukkan bahwa Anda memliki berat badan normal. Hasil ini berdasarkan angka BMI Anda yang ada di antara angka 18.5 sampai 24.9. Memiliki berat badan ideal bisa menjadi salah satu cara untuk menjaga kesehatan tubuh secara keseluruhan. Anda juga bisa terhindar dari berbagai risiko penyakit berbahaya. Cara menjaga berat badan ideal adalah dengan mengatur pola makan dan melakukan olahraga rutin. Pada intinya, Anda harus tetap menjalankan pola hidup sehat. Pastikan untuk selalu menyeimbangkan antara energi yang masuk dengan energi yang dikeluarkan."
+			document.getElementById("bmi").innerHTML = "Hasil Perhitungan BMI"
+			document.getElementById("keterangan").style.color = 'green';
+		}else if((bmi <= 18.4)){
+			keterangan = "Kurang";
+			penjelasan = "Hasil perhitungan menunjukkan bahwa Anda memiliki berat badan kurang atau tergolong kurus. Hasil ini berdasarkan angka BMI Anda yang berada di bawah 18.5. Sebagai solusinya, Anda membutuhkan asupan kalori tambahan sebanyak 300-500 kkal per hari. Perbaiki juga pola makan dan pola hidup untuk mendapatkan berat badan ideal. Cek kebutuhan kalori per hari dengan menggunakan fitur Kalkulator Kalkulator Kalori DokterSehat. Hasil perhitungan menunjukkan bahwa Anda memliki berat badan normal. Hasil ini berdasarkan angka BMI Anda yang ada di antara angka 18.5 sampai 24.9. Memiliki berat badan ideal bisa menjadi salah satu cara untuk menjaga kesehatan tubuh secara keseluruhan. Anda juga bisa terhindar dari berbagai risiko penyakit berbahaya. Cara menjaga berat badan ideal adalah dengan mengatur pola makan dan melakukan olahraga rutin. Pada intinya, Anda harus tetap menjalankan pola hidup sehat. Pastikan untuk selalu menyeimbangkan antara energi yang masuk dengan energi yang dikeluarkan. Hasil perhitungan menunjukkan bahwa Anda memiliki berat badan berlebih atau gemuk. Hasil ini berdasarkan angka BMI Anda yang ada di antara angka 25 sampai 29.9. Sebagai solusinya, Anda harus mengurangi asupan asupan kalori harian sekitar 300-500 kkal. Mulai sekarang coba lebih perhatikan kalori dari makanan dan minuman yang Anda konsumsi. Mengurangi asupan kalori harian sekitar 500 kkal dapat membantu menurunkan berat badan sebesar 0,5-1 kg per minggu. Bukan hanya mengurangi asupan kalori, penurunan berat badan bisa tercapai dengan rutin berolahraga. Perlu diingat bahwa jangan konsumsi kalori di bawah 1.200 kkal per hari karena bisa berdampak buruk pada kesehatan."
+			document.getElementById("bmi").innerHTML = "Hasil Perhitungan BMI";
+			document.getElementById("keterangan").style.color = '#f2ae72';
+		}else{
+			bmi = "";
+			hasil="";
+			keterangan = "";
+			penjelasan = "";
+			document.getElementById("notif1").innerHTML = "<i>*Tinggi Badan Tidak Boleh kosong</i>";
+			document.getElementById("notif2").innerHTML = "<i>*Berat Badan Tidak Boleh kosong</i>";
+		}		
+		document.getElementById("hasil").innerHTML = bmi.toFixed(1)
+		document.getElementById("keterangan").innerHTML = keterangan;
+		document.getElementById("penjelasan").innerHTML = penjelasan;
+	}
+	function hapus(){
+		document.getElementById("height").value = "";
+	    document.getElementById("weight").value = "";
+	    document.getElementById("bmi").innerHTML = "";
+	    document.getElementById("hasil").innerHTML= "";
+	    document.getElementById("keterangan").innerHTML = "";
+	    document.getElementById("penjelasan").innerHTML= "";
+	    document.getElementById("notif1").innerHTML = "";
+	    document.getElementById("notif2").innerHTML= "";
+	}
+</script>
+</body>
+</html>

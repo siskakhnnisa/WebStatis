@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UniHealth</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="inazuma.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        body {
+            padding-top: 0px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+			margin-top:50px;
+            font-family: 'Ubuntu', sans-serif;
+            width: 80vw;
+            padding: 15px;
+        }
+        
+        h2 {
+            color: #403333;
+            font-size: 18px;
+        }
+        
+        .contact-info {
+            display: flex;
+            width: 90%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            text-align: center;
+            color: #403333;
+            border-radius: 5px;
+            padding: 7px;
+        }
+        
+        .details {
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            color: rgb(41, 37, 37);
+            border-radius: 5px;
+            margin-top: 85px;
+            box-shadow: 0 0 15px rgb(67, 72, 77);
+            margin-left: 15px;
+			margin-right: 5px;
+            height: 250px;
+        }
+        
+       
+        
+        .details h3 {
+            text-align: center;
+        }
+        
+        .details p {
+            font-size: 12px;
+            margin-left: 12px;
+			margin-top:5px;
+        }
+        
+        .details h3+p {
+            font-size: 15px;
+			margin-bottom:5px;
+        }
+                       
+        .expert {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .expert-wrapper {
+            padding: 0 25px;
+            display: flex;
+        }
+        .expert img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin: 5px;
+        }
+        
+        input {
+            margin: 5px 15px;
+            height: 25px;
+            box-shadow: 0 0 15px grey;
+        }
+        
+        form label {
+            font-size: 15px;
+            margin: 5px 15px;
+            text-align: left;
+        }
+        
+        .customer-check-wrap {
+            display: flex;
+            align-items: center;
+            margin: 0 15px;
+            font-size: 13px;
+        }
+        
+        textarea {
+            height: 150px;
+            margin: 5px 15px;
+            box-shadow: 0 0 15px grey;
+        }
+        
+        button {
+            margin: 5px 15px;
+            width: 80px;
+            background: #454648b9;
+            padding: 3px 10px;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgb(67, 72, 77);
+            align-self: center;
+        }
+        
+        button:hover {
+            color: rgb(63, 59, 59);
+        }
+        
+        @media screen and (max-width:780px) {
+            .contact-info {
+                flex-direction: column;
+                width: 90%;
+            }
+            form {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            .details {
+                width: 100%;
+                margin-top: 25px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+		<script type="text/javascript">
+			function kirim(){
+				window.alert("Terimakasih atas kritik dan saran anda");
+				}
+		</script>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">UniHealth</a></div>
+        <ul class="links">
+          <li><a href="tentang.html">Beranda</a></li>
+          <li><a href="vaksincvd.html">Vaksin</a></li>
+          <li>
+            <a href="siska/coba (1).html" class="desktop-link">Artikel</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="siska/cov1.html" target="_blank">Artikel 1</a></li>
+              <li><a href="siska/cov2.html" target="_blank">Artikel 2</a></li>
+              <li><a href="siska/cov3.html" target="_blank">Artikel 3</a></li>
+              <li><a href="siska/cov4.html" target="_blank">Artikel 4</a></li>
+              <li><a href="coba.html" target="_blank">More</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="rumahsakit.html" class="desktop-link" target="_blank">Rumah Sakit</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            
+          </li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+<br>
+	<section>
+	<div class="container">
+        <div class="contact-info">
+            <form action="">
+                <h3>Kritik dan Saran</h3>
+                <input type="text" name="fullname" id="fullname" placeholder="Nama Lengkap *" required>
+                <input type="email" name="email" id="email" placeholder="Email *" required>
+                <input type="text" name="company" id="company" placeholder="Alamat *" required>
+                <label for="customercheck">Jenis Kelamin</label>
+                <div class="customer-check-wrap">
+                    <span>Laki-Laki</span>
+                    <input type="radio" name="customercheck" id="customercheck" value="yes" required>
+                    <span>Perempuan</span><input type="radio" name="customercheck" id="customercheck" value="no" required>
+
+                </div>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Ketik Pesanmu Disini..."></textarea>
+                <button onclick="kirim()">Send</button>
+            </form>
+            <div class="details">
+                <h3>Profil</h3>
+                <p>Lets Know About Us!<p>
+                        <div class="expert-wrapper">
+                            <div class="expert">
+                                <img src="fotoriscat.jpeg" />
+                                <p>Clarisca Audyta</p>
+                                <br>
+                                <p>L200210182</p>
+                            </div>
+                            <div class="expert">
+                                <img src="fotosiska.jpeg" />
+                                <p>Siska Khoirunnisa</p>
+                                <br>
+                                <p>L200210183</p>
+                            </div>
+                            <div class="expert">
+                                <img src="fotorehan.jpeg" />
+                                <p>Raihan Rafi R </p>
+                                <br>
+                                <p>L200210184</p>
+                            </div>
+
+
+                        </div>
+
+            </div>
+
+        </div>
+
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UniHealth</title>
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="boks.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="#">UniHealth</a></div>
+        <ul class="links">
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="vaksincvd.html">Vaksin</a></li>
+          <li>
+            <a href="siska/coba (1).html" class="desktop-link">Artikel</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Features</label>
+            <ul>
+              <li><a href="siska/cov1.html" target="_blank">Artikel 1</a></li>
+              <li><a href="siska/cov2.html" target="_blank">Artikel 2</a></li>
+              <li><a href="siska/cov3.html" target="_blank">Artikel 3</a></li>
+              <li><a href="siska/cov4.html" target="_blank">Artikel 4</a></li>
+              <li><a href="coba.html" target="_blank">More</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="rumahsakit.html" class="desktop-link" target="_blank">Rumah Sakit</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services">Services</label>
+            
+          </li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+<br>
+
+  <div class="slideshow-container">
+    <div class="mySlides fade" id="one">
+      <img src="1.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade" id="two">
+      <img src="4.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade" id="three">
+      <img src="3.png" style="width:100%">
+    </div>
+  </div>
+    <br>
+    
+  <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        slideIndex = slideIndex + n;
+        showSlides(slideIndex);
+     }
+
+      function currentSlide(n) {
+        slideIndex = n;
+        showSlides(slideIndex);
+    }
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 6000); // Gambar berganti setiap 6 detik
+    }
+  </script>
+ <br>
+    <!-- <h1 align="center">Berita Berita</h1>
+ <br>
+   <div id="content">
+     <div id="content_top"> -->
+        <!--start content_top-->
+       <!-- <div class="content_top_item">
+       <img src="covid1/covid1.jpg">
+       <p>Kematian Covid-19 di AS Semakin Dekat ke Angka Satu Juta Jiwa</p>
+       <a href="web1.html">Read More</a>
+     </div>
+     <div class="content_top_item">
+       <img src="c">
+       <p>Penanganan Dini Jika Anak Bergejala KIPI Paska Vaksinasi</p>
+       <a href="web2.html">Read More</a>
+     </div>
+     <div class="content_top_item">
+       <img src="covid3/covid3.jpg">
+       <p>Uni Eropa Pertimbangkan Vaksinasi Covid-19 Booster untuk Bepergian</p>
+       <a href="web3.html">Read More</a>
+     </div>
+     <div class="content_top_item">
+       <img src="covid4/covid4.jpg">
+       <p>Tingkatkan Penanggulangan COVID-19 Jelang Nataru</p>
+       <a href="web4.html">Read More</a>
+     </div>
+     <div class="content_top_item">
+       <img src="covid5/covid5.jpg">
+       <p>Indonesia Terapkan Strategi Pencegahan Berlapis Mengantisipasi Varian Omicron</p>
+       <a href="web5.html">Read More</a>
+     </div>
+    </div>
+    </div> -->
+
+     <!-- file css ada di grid.css -->
+     <div class="teksbox">
+      <h2>Berita Terkini</h2>
+      <p>Dapatkan berita terupdate Covid-19 setiap harinya!</p>
+      </div>
+  
+      <!-- Ini bagian box nya -->
+      <ul id="rig">
+        <li>
+          <a class="rig-cell" href="web1.html" target="_blank">
+            <span class="rig-img1"></span>
+            <p>Kematian Covid-19 di AS Semakin Dekat ke Angka Satu Juta Jiwa</p>
+            <p class="tambah">Read More</p>
+            <span class="rig-overlay"></span>
+          </a>
+        </li>
+        <li>
+          <a class="rig-cell" href="web2.html"target="_blank">
+            <span class="rig-img2"></span>
+            <p>Penanganan Dini Jika Anak Bergejala KIPI Paska Vaksinasi Covid-19 <br></p>
+            <p class="tambah">Read More</p>
+            <span class="rig-overlay"></span>
+          </a>
+        </li>
+        <li>
+          <a class="rig-cell" href="web3.html" target="_blank">
+            <span class="rig-img3"></span>
+            <p>Uni Eropa Pertimbangkan Vaksinasi Covid-19 Booster untuk Bepergian</p>
+            <p class="tambah">Read More</p>
+            <span class="rig-overlay"></span>
+          </a>
+        </li>
+        <li>
+          <a class="rig-cell" href="web4.html" target="_blank">
+            <span class="rig-img4"></span>
+            <p>Tingkatkan Penanggulangan COVID-19 Menjelang Nataru 2022</p>
+            <p class="tambah">Read More</p>
+            <span class="rig-overlay"></span>
+          </a>
+        </li>
+        </ul>
+    
+            <!--end content_top-->
+
+      <!-- Ini box artikel kesehatan -->
+      <!-- file css ada di grid.css -->  
+      <!-- file css ada di boks.css -->
+      <!-- JavaScript nya ada di bagian bawah -->
+      <section class="product">
+        <div class="kotak">
+          <div class="teksbox">
+            <h2>Baca Artikel Kesehatan Terbaru</h2>
+            <p>Dapatkan artikel tentang kesehatan terbaru dari kami setiap harinya!</p>
+            </div> 
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar/1.jpg" class="product-thumb" alt="">
+                   <a href="artikel1.html" target="_blank"><button class="card-btn">Read More</button></a>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Amankah air distalasi untuk dikonsumsi?</p>
+                    <p class="product-short-description">Air distilasi adalah uap dari ..</p> <br>
+                    <p class="product-short">Air konsumsi</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="gambar/2.jpg" class="product-thumb" alt="">
+                    <a href="bmi.html" target="_blank"><button class="card-btn">Read More</button></a>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Ketahui berat badan idealmu disini!</p>
+                    <p class="product-short-description">Berat badan ideal adalah..</p><br>
+                    <p class="product-short">BMI</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar/3.2.jpg" class="product-thumb" alt="">
+                    <a href="artikel4.html" target="_blank"> <button class="card-btn" href="#">Read More</button></a>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Pentingnya menjaga kesehatan mata</p>
+                    <p class="product-short-description">Mata adalah salah satu..</p><br>
+                    <p class="product-short">Mata</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar/4.jpg" class="product-thumb" alt="">
+                    <a href="artikel5.html" target="_blank"><button class="card-btn">Read More</button></a>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">7 Manfaat streching</p>
+                    <p class="product-short-description">Manfaat streching bagi..</p><br><br>
+                    <p class="product-short">Streching</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="gambar/5.jpg" class="product-thumb" alt="">
+                    <a href="artikel3.html" target="_blank"><button class="card-btn">Read More</button></a>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Bahaya begadang bagi kesehatan</p>
+                    <p class="product-short-description">Alasan seseorang sering..</p><br>
+                    <p class="product-short">Begadang</p>
+                </div>
+            </div>
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="gambar/1.jpg" class="product-thumb" alt="">
+                 <a href="artikel1.html" target="_blank"><button class="card-btn">Read More</button></a>
+              </div>
+              <div class="product-info">
+                  <p class="product-brand">Amankah air distalasi untuk dikonsumsi?</p>
+                  <p class="product-short-description">Air distilasi adalah uap dari ..</p><br>
+                  <p class="product-short">Air konsumsi</p>
+                  
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  
+                  <img src="gambar/2.jpg" class="product-thumb" alt="">
+                  <a href="bmi.html" target="_blank"><button class="card-btn">Read More</button></a>
+              </div>
+              <div class="product-info">
+                  <p class="product-brand">Ketahui berat badan idealmu disini!</p>
+                  <p class="product-short-description">Berat badan ideal adalah..</p><br>
+                  <p class="product-short">BMI</p>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="gambar/3.2.jpg" class="product-thumb" alt="">
+                  <a href="artikel4.html" target="_blank"> <button class="card-btn" href="#">Read More</button></a>
+              </div>
+              <div class="product-info">
+                  <p class="product-brand">Pentingnya menjaga kesehatan mata</p>
+                  <p class="product-short-description">Mata adalah salah satu..</p> <br>
+                  <p class="product-short">Mata</p>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="gambar/4.jpg" class="product-thumb" alt="">
+                  <a href="artikel5.html" target="_blank"></a><button class="card-btn">Read More</button></a>
+              </div>
+              <div class="product-info">
+                  <pclass="product-brand">7 Manfaat streching</p>
+                  <p class="product-short-description">Manfaat streching bagi..</p><br><br>
+                  <p class="product-short">Streching</p>
+              </div>
+          </div>
+          <div class="product-card">
+              <div class="product-image">
+                  
+                  <img src="gambar/5.jpg" class="product-thumb" alt="">
+                  <a href="artikel3.html" target="_blank"><button class="card-btn">Read More</button></a>
+              </div>
+              <div class="product-info">
+                  <p class="product-brand">Bahaya begadang bagi kesehatan</p>
+                  <p class="product-short-description">Alasan seseorang sering..</p><br>
+                  <p class="product-short">Begadang</p>
+              </div>
+          </div>  
+      </div>
+      </section>
+     <!-- Akhir dari box artikel kesehatan --> 
+
+     <!-- Bagian Footer -->
+     <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>UniHealth</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Recommendation</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Article</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Telp</a></li>
+              <li><a href="#">Address</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+   </footer>
+     
+
+
+     <!-- javascript untuk bagian artikel kesehatan
+     -->
+    <script>
+       const productContainers = [...document.querySelectorAll('.product-container')];
+        const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+        const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+        productContainers.forEach((item, i) => {
+        let containerDimensions = item.getBoundingClientRect();
+        let containerWidth = containerDimensions.width;
+
+        nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+        })
+
+        preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+      
+    </script>
+    
+ </body>
+</html>
